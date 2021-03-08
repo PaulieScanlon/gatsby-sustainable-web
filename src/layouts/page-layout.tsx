@@ -12,11 +12,7 @@ const PageLayout: FunctionComponent = ({ children }) => {
   return (
     <Fragment>
       <Header isMenuOpen={isMenuOpen} onClick={handleMenu} />
-      <div id="content">
-        {isMenuOpen ? <Navigation /> : null}
-        {children}
-      </div>
-      <footer id="colophon"></footer>
+      <div id="content">{isMenuOpen ? <Navigation onClick={handleMenu} /> : children}</div>
     </Fragment>
   )
 }

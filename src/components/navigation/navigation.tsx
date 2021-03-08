@@ -3,13 +3,16 @@ import React, { FunctionComponent } from 'react'
 import { useMenu } from '../../hooks/useMenu'
 import { isExternalLink } from '../../utils'
 
+interface INavigationProps {
+  onClick: () => void
+}
 export interface IMenuItem {
   id: string
   label: string
   path: string
 }
 
-export const Navigation: FunctionComponent = () => {
+export const Navigation: FunctionComponent<INavigationProps> = ({ onClick }) => {
   const {
     name,
     menuItems: { nodes },
@@ -26,7 +29,7 @@ export const Navigation: FunctionComponent = () => {
             if (isExternalLink(path)) {
               return (
                 <li key={id}>
-                  <a href={path} target="_blank" rel="noreferrer">
+                  <a href={path} target="_blank" rel="noreferrer" onClick={onClick}>
                     {label}
                   </a>
                 </li>
@@ -35,7 +38,9 @@ export const Navigation: FunctionComponent = () => {
 
             return (
               <li key={id}>
-                <Link to={path}>{label}</Link>
+                <Link to={path} onClick={onClick}>
+                  {label}
+                </Link>
               </li>
             )
           })}

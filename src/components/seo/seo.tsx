@@ -24,13 +24,6 @@ export const Seo: FunctionComponent<ISeoProps> = ({
 
   return (
     <Helmet>
-      <link
-        rel="stylesheet"
-        id="susty-style-css"
-        href={`${generalSettingsUrl}/wp-content/themes/susty-master/style.css?ver=5.6.2`}
-        type="text/css"
-        media="all"
-      />
       <html lang={generalSettingsLanguage} />
       <title>{opengraphTitle}</title>
       <link rel="canonical" href={`${generalSettingsUrl}${canonical}`} />
