@@ -4,7 +4,6 @@ import { useWp } from '../../hooks/useWp'
 
 interface IHeaderProps {
   isMenuOpen: boolean
-
   onClick: () => void
 }
 
