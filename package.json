@@ -1,0 +1,70 @@
+{
+  "name": "wp-susty",
+  "version": "0.0.1",
+  "description": "A Gatsby / Wordpress demo of Susty",
+  "main": "index.js",
+  "scripts": {
+    "develop": "gatsby develop",
+    "build": "gatsby build",
+    "clean": "gatsby clean",
+    "serve": "gatsby serve",
+    "prettier": "prettier --config ./.prettierrc.js --ignore-path ./.prettierignore --write \"**/*.{json,js,ts,tsx,mdx}\"",
+    "lint": "eslint . --ext .ts,.tsx",
+    "lint:fix": "eslint . --ext .ts,.tsx --fix --quiet"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "npm run lint:fix && npm run prettier",
+      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS",
+      "pre-push": ""
+    }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/PaulieScanlon/wp-susty.git"
+  },
+  "keywords": [
+    "Gatsby",
+    "WP GraphQL",
+    "WP Gatsby"
+  ],
+  "author": {
+    "name": "Paul Scanlon",
+    "email": "pauliescanlon@gmail.com"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/PaulieScanlon/wp-susty/issues"
+  },
+  "homepage": "https://github.com/PaulieScanlon/wp-susty#readme",
+  "dependencies": {
+    "dotenv": "^8.2.0",
+    "gatsby": "^3.0.3",
+    "gatsby-plugin-gatsby-cloud": "^2.0.0",
+    "gatsby-plugin-image": "^1.0.0",
+    "gatsby-plugin-react-helmet": "^4.0.0",
+    "gatsby-plugin-sharp": "^3.0.0",
+    "gatsby-plugin-theme-ui": "^0.3.5",
+    "gatsby-plugin-wpgraphql-seo": "^1.1.3",
+    "gatsby-source-filesystem": "^3.0.0",
+    "gatsby-source-wordpress": "^5.0.0",
+    "gatsby-transformer-sharp": "^3.0.0",
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1",
+    "react-helmet": "^6.1.0",
+    "typescript": "^4.1.5"
+  },
+  "devDependencies": {
+    "@commitlint/cli": "^11.0.0",
+    "@commitlint/config-conventional": "^11.0.0",
+    "@types/react-helmet": "^6.1.0",
+    "@typescript-eslint/eslint-plugin": "^4.14.2",
+    "@typescript-eslint/parser": "^4.14.2",
+    "eslint": "^7.19.0",
+    "eslint-config-prettier": "^7.2.0",
+    "eslint-plugin-react": "^7.22.0",
+    "husky": "^4.3.8",
+    "prettier": "^2.2.1",
+    "prettier-plugin-organize-imports": "^1.1.1"
+  }
+}
