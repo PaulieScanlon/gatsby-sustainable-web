@@ -9,7 +9,7 @@ interface IHeaderProps {
 
 export const Header: FunctionComponent<IHeaderProps> = ({ isMenuOpen, onClick }) => {
   const {
-    allSettings: { generalSettingsTitle, generalSettingsUrl },
+    allSettings: { generalSettingsTitle },
   } = useWp()
 
   const { name } = useMenu()
@@ -18,10 +18,8 @@ export const Header: FunctionComponent<IHeaderProps> = ({ isMenuOpen, onClick })
     <header id="masthead">
       <div className="logo">
         <a href="/" rel="home">
-          <img
-            alt={`${generalSettingsTitle} logo`}
-            src={`${generalSettingsUrl}/wp-content/themes/susty-master/images/eco-chat.svg`}
-          />
+          {/* TODO - query the logo and alt somehow */}
+          <img alt="WP Susty logo" src="https://wp-susty.online/wp-content/uploads/2021/03/eco-chat.svg" />
           <span className="screen-reader-text">{generalSettingsTitle}</span>
         </a>
       </div>

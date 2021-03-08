@@ -28,7 +28,7 @@ export const Seo: FunctionComponent<ISeoProps> = ({
       <title>{opengraphTitle}</title>
       <link rel="canonical" href={`${generalSettingsUrl}${canonical}`} />
       <meta name="description" content={opengraphDescription} />
-      <meta name="image" content={defaultImage.link} />
+      <meta name="image" content={defaultImage.mediaItemUrl} />
       <meta name="image:alt" content={defaultImage.alt} />
       {/* <meta name="keywords" content={keywords ? keywords.join(', ') : null} /> */}
 
@@ -37,7 +37,7 @@ export const Seo: FunctionComponent<ISeoProps> = ({
       <meta property="og:title" content={opengraphTitle} />
       <meta property="og:url" content={opengraphUrl} />
       <meta property="og:description" content={opengraphDescription} />
-      <meta property="og:image" content={defaultImage.link} />
+      <meta property="og:image" content={defaultImage.mediaItemUrl} />
       <meta property="og:image:alt" content={defaultImage.alt} />
 
       {/* Twitter */}
@@ -45,7 +45,7 @@ export const Seo: FunctionComponent<ISeoProps> = ({
       <meta name="twitter:title" content={opengraphTitle} />
       <meta name="twitter:url" content={opengraphUrl} />
       <meta name="twitter:description" content={opengraphDescription} />
-      <meta name="twitter:image" content={defaultImage.link} />
+      <meta name="twitter:image" content={defaultImage.mediaItemUrl} />
       <meta name="twitter:image:alt" content={defaultImage.alt} />
 
       {/* favicon */}

@@ -221,7 +221,7 @@ a {
   border-bottom: 0.2em solid transparent;
 }
 a#susty-back-link {
-  padding: 0.3em 0.6em;
+  padding: 0 0.6em;
 }
 a:visited {
   color: #040402;

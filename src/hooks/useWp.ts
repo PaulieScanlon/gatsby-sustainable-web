@@ -13,7 +13,7 @@ export const useWp = () => {
           openGraph {
             defaultImage {
               altText
-              link
+              mediaItemUrl
             }
           }
         }
