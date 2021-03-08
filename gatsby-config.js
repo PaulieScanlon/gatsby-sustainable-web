@@ -10,6 +10,7 @@ module.exports = {
         url: process.env.WPGRAPHQL_URL,
       },
     },
+    `gatsby-plugin-image`,
     `gatsby-plugin-sharp`,
     `gatsby-transformer-sharp`,
     `gatsby-plugin-wpgraphql-seo`,

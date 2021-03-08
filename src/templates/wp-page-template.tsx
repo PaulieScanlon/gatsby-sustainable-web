@@ -1,4 +1,5 @@
 import { graphql } from 'gatsby'
+import { GatsbyImage, getImage } from 'gatsby-plugin-image'
 import React, { Fragment, FunctionComponent } from 'react'
 import { Seo } from '../components/seo'
 
@@ -7,12 +8,17 @@ interface IPageTemplate {
 }
 
 const WpPageTemplate: FunctionComponent<IPageTemplate> = ({ data: { page } }) => {
-  const { id, title, content, seo } = page
+  const { id, featuredImage, title, content, seo } = page
+
+  const {
+    node: { altText, localFile },
+  } = featuredImage || { node: { altText: '', localFile: null } }
 
   return (
     <Fragment>
       <Seo seo={seo} />
       <h1>{title}</h1>
+      {localFile ? <GatsbyImage alt={altText} image={getImage(localFile)} /> : null}
       <div dangerouslySetInnerHTML={{ __html: content }} />
       <div style={{ display: 'none' }}>{`page id: ${id}`}</div>
     </Fragment>
@@ -30,6 +36,16 @@ export const query = graphql`
     page: wpPage(id: { eq: $id }) {
       id
       title
+      featuredImage {
+        node {
+          altText
+          localFile {
+            childImageSharp {
+              gatsbyImageData(quality: 50, layout: FULL_WIDTH, width: 550, formats: [AUTO, WEBP, AVIF])
+            }
+          }
+        }
+      }
       content
       seo {
         opengraphSiteName
