@@ -23,8 +23,6 @@ export const Seo: FunctionComponent<ISeoProps> = ({
     },
   } = useWp()
 
-  console.log({ defaultImage })
-
   const {
     siteMetadata: { siteUrl },
   } = useSiteMetadata()
