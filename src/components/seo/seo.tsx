@@ -17,11 +17,13 @@ export const Seo: FunctionComponent<ISeoProps> = ({
   seo: { opengraphTitle, opengraphDescription, opengraphType, opengraphUrl, canonical },
 }) => {
   const {
-    allSettings: { generalSettingsUrl, generalSettingsLanguage },
+    allSettings: { generalSettingsLanguage },
     seo: {
       openGraph: { defaultImage },
     },
   } = useWp()
+
+  console.log({ defaultImage })
 
   const {
     siteMetadata: { siteUrl },
@@ -31,27 +33,27 @@ export const Seo: FunctionComponent<ISeoProps> = ({
     <Helmet>
       <html lang={generalSettingsLanguage} />
       <title>{opengraphTitle}</title>
-      <link rel="canonical" href={`${generalSettingsUrl}${canonical}`} />
+      <link rel="canonical" href={`${siteUrl}${canonical}`} />
       <meta name="description" content={opengraphDescription} />
       <meta name="image" content={defaultImage.mediaItemUrl} />
-      <meta name="image:alt" content={defaultImage.alt} />
+      <meta name="image:alt" content={defaultImage.altText} />
       {/* <meta name="keywords" content={keywords ? keywords.join(', ') : null} /> */}
 
       {/* Facebook */}
       <meta property="og:type" content={opengraphType} />
       <meta property="og:title" content={opengraphTitle} />
-      <meta property="og:url" content={`${generalSettingsUrl}${opengraphUrl}`} />
+      <meta property="og:url" content={`${siteUrl}${opengraphUrl}`} />
       <meta property="og:description" content={opengraphDescription} />
       <meta property="og:image" content={defaultImage.mediaItemUrl} />
-      <meta property="og:image:alt" content={defaultImage.alt} />
+      <meta property="og:image:alt" content={defaultImage.altText} />
 
       {/* Twitter */}
       <meta name="twitter:card" content="summary_large_image" />
       <meta name="twitter:title" content={opengraphTitle} />
-      <meta name="twitter:url" content={`${generalSettingsUrl}${opengraphUrl}`} />
+      <meta name="twitter:url" content={`${siteUrl}${opengraphUrl}`} />
       <meta name="twitter:description" content={opengraphDescription} />
       <meta name="twitter:image" content={defaultImage.mediaItemUrl} />
-      <meta name="twitter:image:alt" content={defaultImage.alt} />
+      <meta name="twitter:image:alt" content={defaultImage.altText} />
 
       {/* favicon */}
       <link
