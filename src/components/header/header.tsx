@@ -1,7 +1,7 @@
 import React, { FunctionComponent } from 'react'
 import { useMenu } from '../../hooks/useMenu'
 import { useWp } from '../../hooks/useWp'
-
+import { Logo } from '../logo'
 interface IHeaderProps {
   isMenuOpen: boolean
   onClick: () => void
@@ -18,9 +18,7 @@ export const Header: FunctionComponent<IHeaderProps> = ({ isMenuOpen, onClick })
     <header id="masthead">
       <div className="logo">
         <a href="/" rel="home">
-          {/* TODO - query the logo and alt somehow */}
-          <img alt="WP Susty logo" src="https://wp-susty.online/wp-content/uploads/2021/03/eco-chat.svg" />
-          <span className="screen-reader-text">{generalSettingsTitle}</span>
+          <Logo />
         </a>
       </div>
       <p>
