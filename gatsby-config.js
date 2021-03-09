@@ -3,6 +3,9 @@ require('dotenv').config({
 })
 
 module.exports = {
+  siteMetadata: {
+    siteUrl: `https://wpsusty.gatsbyjs.io/`,
+  },
   plugins: [
     {
       resolve: `gatsby-source-wordpress`,

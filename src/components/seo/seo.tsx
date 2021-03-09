@@ -1,5 +1,6 @@
 import React, { FunctionComponent } from 'react'
 import { Helmet } from 'react-helmet'
+import { useSiteMetadata } from '../../hooks/useSiteMetadata'
 import { useWp } from '../../hooks/useWp'
 
 interface ISeoProps {
@@ -22,6 +23,10 @@ export const Seo: FunctionComponent<ISeoProps> = ({
     },
   } = useWp()
 
+  const {
+    siteMetadata: { siteUrl },
+  } = useSiteMetadata()
+
   return (
     <Helmet>
       <html lang={generalSettingsLanguage} />
@@ -35,7 +40,7 @@ export const Seo: FunctionComponent<ISeoProps> = ({
       {/* Facebook */}
       <meta property="og:type" content={opengraphType} />
       <meta property="og:title" content={opengraphTitle} />
-      <meta property="og:url" content={opengraphUrl} />
+      <meta property="og:url" content={`${generalSettingsUrl}${opengraphUrl}`} />
       <meta property="og:description" content={opengraphDescription} />
       <meta property="og:image" content={defaultImage.mediaItemUrl} />
       <meta property="og:image:alt" content={defaultImage.alt} />
@@ -43,7 +48,7 @@ export const Seo: FunctionComponent<ISeoProps> = ({
       {/* Twitter */}
       <meta name="twitter:card" content="summary_large_image" />
       <meta name="twitter:title" content={opengraphTitle} />
-      <meta name="twitter:url" content={opengraphUrl} />
+      <meta name="twitter:url" content={`${generalSettingsUrl}${opengraphUrl}`} />
       <meta name="twitter:description" content={opengraphDescription} />
       <meta name="twitter:image" content={defaultImage.mediaItemUrl} />
       <meta name="twitter:image:alt" content={defaultImage.alt} />
@@ -53,14 +58,14 @@ export const Seo: FunctionComponent<ISeoProps> = ({
         rel="icon"
         type="image/png"
         sizes="16x16"
-        href={`${generalSettingsUrl}/images/favicon-16x16.png`}
+        href={`${siteUrl}/images/favicon-16x16.png`}
         data-react-helmet="true"
       />
       <link
         rel="icon"
         type="image/png"
         sizes="32x32"
-        href={`${generalSettingsUrl}/images/favicon-32x32.png`}
+        href={`${siteUrl}/images/favicon-32x32.png`}
         data-react-helmet="true"
       />
     </Helmet>
