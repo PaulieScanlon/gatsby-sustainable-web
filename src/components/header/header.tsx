@@ -23,7 +23,7 @@ export const Header: FunctionComponent<IHeaderProps> = ({ isMenuOpen, onClick })
       </div>
       <p>
         <a href="/" rel="home">
-          {generalSettingsTitle}
+          {`${generalSettingsTitle} | Gatsby`}
         </a>
       </p>
 
