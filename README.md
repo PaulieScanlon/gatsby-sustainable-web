@@ -13,11 +13,13 @@ A Gatsby / Wordpress demo of Susty
 
 ## Gatsby
 
-- Gatsby v3
-- gatsby-source-wordpress
-- gatsby-plugin-sharp
-- gatsby-transformer-sharp
-- [gatsby-plugin-wpgraphql-seo](gatsby-plugin-wpgraphql-seo)
+- [Gatsby v3](https://www.gatsbyjs.com/blog/gatsby-v3/)
+- [gatsby-source-wordpress](https://www.gatsbyjs.com/plugins/gatsby-source-wordpress/)
+- [gatsby-plugin-sharp](https://www.gatsbyjs.com/plugins/gatsby-plugin-sharp/)
+- [gatsby-transformer-sharp](https://www.gatsbyjs.com/plugins/gatsby-transformer-sharp/)
+- [gatsby-plugin-wpgraphql-seo](https://www.gatsbyjs.com/plugins/gatsby-plugin-wpgraphql-seo/)
+- [gatsby-plugin-image](https://www.gatsbyjs.com/plugins/gatsby-plugin-image/)
+- [gatsby-plugin-image-docs](https://www.gatsbyjs.com/docs/reference/built-in-components/gatsby-plugin-image/)
 
 ## Susty Demo
 
