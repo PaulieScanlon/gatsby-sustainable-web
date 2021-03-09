@@ -49,11 +49,7 @@ export const Seo: FunctionComponent<ISeoProps> = ({
       <meta name="twitter:image:alt" content={defaultImage.alt} />
 
       {/* favicon */}
-      <link
-        rel="icon"
-        type="image/svg+xml"
-        href={`${generalSettingsUrl}/wp-content/themes/susty-master/images/eco-chat.svg`}
-      />
+      <link rel="icon" type="image/svg+xml" href="images/eco-chat.svg" />
     </Helmet>
   )
 }
