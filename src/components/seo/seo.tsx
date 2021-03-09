@@ -49,8 +49,20 @@ export const Seo: FunctionComponent<ISeoProps> = ({
       <meta name="twitter:image:alt" content={defaultImage.alt} />
 
       {/* favicon */}
-      <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png" data-react-helmet="true" />
-      <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png" data-react-helmet="true" />
+      <link
+        rel="icon"
+        type="image/png"
+        sizes="16x16"
+        href={`${generalSettingsUrl}/images/favicon-16x16.png`}
+        data-react-helmet="true"
+      />
+      <link
+        rel="icon"
+        type="image/png"
+        sizes="32x32"
+        href={`${generalSettingsUrl}/images/favicon-32x32.png`}
+        data-react-helmet="true"
+      />
     </Helmet>
   )
 }

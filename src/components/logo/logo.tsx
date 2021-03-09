@@ -3,12 +3,12 @@ import { useWp } from '../../hooks/useWp'
 
 export const Logo: FunctionComponent = () => {
   const {
-    allSettings: { generalSettingsTitle },
+    allSettings: { generalSettingsUrl, generalSettingsTitle },
   } = useWp()
 
   return (
     <Fragment>
-      <img alt={`${generalSettingsTitle} logo`} src="images/eco-chat.svg" />
+      <img alt={`${generalSettingsTitle} logo`} src={`${generalSettingsUrl}/images/eco-chat.svg`} />
       <span className="screen-reader-text">{generalSettingsTitle}</span>
     </Fragment>
   )
