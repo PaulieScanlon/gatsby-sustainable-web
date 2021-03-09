@@ -2,16 +2,23 @@
 
 A Gatsby / Wordpress demo of Susty
 
-## WordPress
+## 👀 Demos
 
-- Hosting by [Hostinger](https://www.hostinger.com/)
-- Theme [Susty](https://github.com/jacklenox/susty)
+- Gatsby: [https://wpsusty.gatsbyjs.io/](https://wpsusty.gatsbyjs.io/)
+- Wordpress: [https://wp-susty.online/](https://wp-susty.online/)
+
+## Tech Stack
+
+### WordPress
+
+- [Hostinger](https://www.hostinger.com/) - Hosting
+- [Susty](https://github.com/jacklenox/susty) - Theme
 - [WP Gatsby](https://wordpress.org/plugins/wp-gatsby/) - Official Plugin
 - [WP GraphQL](https://www.wpgraphql.com/) - Official Plugin
 - [Yoast SEO](https://yoast.com/wordpress/plugins/seo/)
 - [wp-graphql-yoast-seo](https://github.com/ashhitch/wp-graphql-yoast-seo)
 
-## Gatsby
+### Gatsby
 
 - [Gatsby v3](https://www.gatsbyjs.com/blog/gatsby-v3/)
 - [gatsby-source-wordpress](https://www.gatsbyjs.com/plugins/gatsby-source-wordpress/)
@@ -23,4 +30,5 @@ A Gatsby / Wordpress demo of Susty
 
 ## Susty Demo
 
-[sustywp.com](https://sustywp.com/)
+The original [Susty](https://sustywp.com/) theme by [Jack Lenox](https://blog.jacklenox.com/) can be found on GitHub
+[here](https://github.com/jacklenox/susty)
