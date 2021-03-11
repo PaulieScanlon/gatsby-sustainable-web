@@ -1,7 +1,7 @@
 {
-  "name": "wp-susty",
+  "name": "gatsby-sustainable-web",
   "version": "0.0.1",
-  "description": "A Gatsby / Wordpress demo of Susty",
+  "description": "A gatsby-plugin-image-demo",
   "main": "index.js",
   "scripts": {
     "develop": "gatsby develop",
@@ -21,7 +21,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/PaulieScanlon/wp-susty.git"
+    "url": "git+https://github.com/PaulieScanlon/gatsby-sustainable-web.git"
   },
   "keywords": [
     "Gatsby",
@@ -34,14 +34,14 @@
   },
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/PaulieScanlon/wp-susty/issues"
+    "url": "https://github.com/PaulieScanlon/gatsby-sustainable-web/issues"
   },
-  "homepage": "https://github.com/PaulieScanlon/wp-susty#readme",
+  "homepage": "https://github.com/PaulieScanlon/gatsby-sustainable-web#readme",
   "dependencies": {
     "dotenv": "^8.2.0",
-    "gatsby": "^3.0.3",
-    "gatsby-plugin-gatsby-cloud": "^2.0.0",
-    "gatsby-plugin-image": "^1.0.0",
+    "gatsby": "^3.2.1",
+    "gatsby-plugin-gatsby-cloud": "^2.2.0",
+    "gatsby-plugin-image": "^1.2.1",
     "gatsby-plugin-preact": "^5.0.0",
     "gatsby-plugin-react-helmet": "^4.0.0",
     "gatsby-plugin-sharp": "^3.0.0",

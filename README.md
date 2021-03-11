@@ -1,11 +1,11 @@
-# wp-susty
+# gatsby-sustainable-web
 
 A Gatsby / Wordpress demo of Susty
 
 ## 👀 Demos
 
 - Gatsby: [https://wpsusty.gatsbyjs.io/](https://wpsusty.gatsbyjs.io/)
-- Wordpress: [https://wp-susty.online/](https://wp-susty.online/)
+- Wordpress: [https://gatsby-sustainable-web.online/](https://gatsby-sustainable-web.online/)
 
 ## Tech Stack
 

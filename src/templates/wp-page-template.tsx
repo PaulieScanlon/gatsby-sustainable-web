@@ -20,7 +20,7 @@ const WpPageTemplate: FunctionComponent<IPageTemplate> = ({ data: { page } }) =>
       <h1>{title}</h1>
       {localFile ? <GatsbyImage alt={altText} image={getImage(localFile)} /> : null}
       <div dangerouslySetInnerHTML={{ __html: content }} />
-      <div style={{ display: 'none' }}>{`page id: ${id}`}</div>
+      <div style={{ fontSize: '10px', color: '#cccccc' }}>{`page id: ${id}`}</div>
     </Fragment>
   )
 }

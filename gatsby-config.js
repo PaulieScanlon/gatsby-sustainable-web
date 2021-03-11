@@ -4,7 +4,7 @@ require('dotenv').config({
 
 module.exports = {
   siteMetadata: {
-    siteUrl: `https://wpsusty.gatsbyjs.io/`,
+    siteUrl: ``,
   },
   plugins: [
     {
