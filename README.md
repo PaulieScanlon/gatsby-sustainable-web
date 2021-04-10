@@ -4,7 +4,7 @@ A Gatsby / Wordpress demo of Susty
 
 ## 👀 Demos
 
-- Gatsby: [https://wpsusty.gatsbyjs.io/](https://wpsusty.gatsbyjs.io/)
+- Gatsby: [https://gatsbysustainableweb.gatsbyjs.io/](https://gatsbysustainableweb.gatsbyjs.io/)
 - Wordpress: [https://gatsby-sustainable-web.online/](https://gatsby-sustainable-web.online/)
 
 ## Tech Stack

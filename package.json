@@ -1,7 +1,7 @@
 {
   "name": "gatsby-sustainable-web",
   "version": "0.0.1",
-  "description": "A gatsby-plugin-image-demo",
+  "description": "A gatsby-source-wordpress-demo",
   "main": "index.js",
   "scripts": {
     "develop": "gatsby develop",
