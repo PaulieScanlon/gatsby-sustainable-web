@@ -4,7 +4,7 @@ require('dotenv').config({
 
 module.exports = {
   siteMetadata: {
-    siteUrl: ``,
+    siteUrl: `https://gatsbysustainableweb.gatsbyjs.io/`,
   },
   plugins: [
     {
